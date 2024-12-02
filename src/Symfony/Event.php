@@ -20,7 +20,7 @@ class Event implements EventContextInterface
      * @param string $action
      * @param array $properties
      */
-    public function __construct(string $action = null, array $properties = [])
+    public function __construct(?string $action = null, array $properties = [])
     {
         $this->event = new GenericEvent($action, $properties);
     }

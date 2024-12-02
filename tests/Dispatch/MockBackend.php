@@ -11,7 +11,7 @@ class MockBackend implements EventDispatcherInterface
 
     public $listeners = [];
 
-    public function dispatch(object $eventContext, string $eventName = null): void
+    public function dispatch(object $eventContext, ?string $eventName = null): void
     {
         $listeners = $this->listeners[$eventName] ?? [];
         foreach ($listeners as $listener) {

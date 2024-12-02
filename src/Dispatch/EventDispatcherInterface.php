@@ -25,5 +25,5 @@ interface EventDispatcherInterface extends PsrEventDispatcherInterface
      * @param object $eventContext
      * @param string|null $eventName
      */
-    public function dispatch(object $eventContext, string $eventName = null): void;
+    public function dispatch(object $eventContext, ?string $eventName = null): void;
 }
